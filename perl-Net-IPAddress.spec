@@ -1,7 +1,7 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
+
 %define		pdir	Net
 %define		pnam	IPAddress
 %include	/usr/lib/rpm/macros.perl
@@ -13,12 +13,9 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://search.cpan.org/CPAN/authors/id/S/SA/SARENNER/Net-IPAddress-%{version}.tar.gz
 # Source0-md5:	512117d3f6bcc027bd11f70d71f6f844
-# generic URL, check or change before uncommenting
-#URL:		http://search.cpan.org/dist/Net-IPAddress/
+URL:		http://search.cpan.org/dist/Net-IPAddress/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{with tests}
-%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

@@ -4,7 +4,6 @@
 
 %define		pdir	Net
 %define		pnam	IPAddress
-%include	/usr/lib/rpm/macros.perl
 Summary:	Net::IPAddress - Functions used to manipulate IP addresses, masks and FQDN's
 Name:		perl-Net-IPAddress
 Version:	1.10
